@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--自定义控件的属性及声明整体样式
+其中format的属性值有：
+                      string, 字符串 例如：<attr name = "apiKey" format = "string" />
+                      color, 颜色值 例如：<attr name="titleColor" format="color"/>
+                      dimension, 尺寸值 例如：<attr name = "layout_width" format = "dimension" />
+                      integer, 整型值 例如：<attr name = "framesCount" format="integer" />
+                      enum, 枚举值 例如：<attr name="orientation"> <enum name="horizontal" value="0" /> <enum name="vertical" value="1" /> </attr>
+                      reference, 参考某一资源ID 例如：<attr name="background" format="reference"/>
+                      float, 浮点值 例如：<attr name = "alpha" format = "float" />
+                      boolean, 布尔值 例如：<attr name = "focusable" format = "boolean" />
+                      fraction, 百分数 例如： <attr name = "pivotX" format = "fraction" />
+                      flag, 位或运算 例如： <attr name="windowSoftInputMode">
+                                                <flag name = "stateUnspecified" value = "0" />
+                                                <flag name = "stateUnchanged" value = "1" />
+                                                <flag name = "stateHidden" value = "2" />
+                                                <flag name = "stateAlwaysHidden" value = "3" />
+                                                <flag name = "stateVisible" value = "4" />
+                                                <flag name = "stateAlwaysVisible" value = "5" />
+                                                <flag name = "adjustUnspecified" value = "0x00" />
+                                                <flag name = "adjustResize" value = "0x10" />
+                                                <flag name = "adjustPan" value = "0x20" />
+                                                <flag name = "adjustNothing" value = "0x30" />
+                                            </attr>
+-->
+
+<resources>
+
+    <!--属性值定义时可以指定多种类型值
+    例如： <attr name = "background" format = "reference|color" />
+    -->
+
+    <attr name="titleText" format="string"/>
+    <attr name="titleSize" format="dimension"/>
+    <attr name="titleColor" format="color"/>
+
+    <declare-styleable name="CustomTitleView">
+        <attr name="titleText"/>
+        <attr name="titleSize"/>
+        <attr name="titleColor"/>
+    </declare-styleable>
+    
+</resources>

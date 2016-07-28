@@ -1,0 +1,85 @@
+apply plugin: 'me.tatarka.retrolambda'
+apply plugin: 'com.android.application'
+
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion '23.0.3'
+
+    defaultConfig {
+        applicationId "com.dell.androidprojectpactice"
+        minSdkVersion 19
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+repositories {
+    mavenCentral()
+    maven {
+        url 'https://raw.githubusercontent.com/lijy91/mvn-repo/master/'
+    }
+    maven {
+        url "https://jitpack.io"
+    }
+    maven {
+        url 'https://dl.bintray.com/wangyuwei/maven'
+    }
+    maven {
+        url 'https://dl.bintray.com/spark/maven'
+    }
+    jcenter()
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.3.0'
+    compile 'com.jakewharton:butterknife:7.0.1'
+    compile 'com.android.support:design:23.3.0'
+    compile 'com.android.support:recyclerview-v7:23.3.0'
+    compile 'com.android.support:cardview-v7:23.3.0'
+    compile 'com.google.code.gson:gson:2.6.2'
+
+    compile 'rb.popview:popview:0.1.0' //碎泡泡特效
+    compile 'com.race604.flyrefresh:library:2.0.0' //小飞机刷新
+    compile 'com.1gravity:android-rteditor:1.6.2' //富文本
+    compile 'org.blankapp:blankapp-validation:0.0.1-alpha@aar' //表单验证
+    compile 'com.dynamitechetan.fogviewlibrary:FogViewLibrary:1.0.0' //雾状背景 刮刮乐
+    compile 'com.github.shem8:material-login:1.4.0' //登录注册特效
+
+    compile 'io.reactivex:rxandroid:1.2.1' //RxJava & RxAndroid
+    // Because RxAndroid releases are few and far between, it is recommended you also
+    // explicitly depend on RxJava's latest version for bug fixes and new features.
+    compile 'io.reactivex:rxjava:1.1.6'
+
+    compile 'com.barryzhang:temptyview:0.0.1' //列表view为空时提示无数据
+
+    compile 'com.yalantis:sidemenu:1.0' //侧滑菜单 ---- 不太好看......
+    compile 'com.github.ozodrukh:CircularReveal:(latest-release)@aar'
+
+    compile 'me.wangyuwei:shoppoing:1.0.2' //购买数量特效
+
+    compile 'com.facebook.stetho:stetho:1.2.0'
+    compile 'com.amitshekhar.android:android-networking:0.0.1' //Fast Android Networking库 封装了OKHttp网络通信
+
+    compile 'me.wangyuwei:banner:1.0.6' //仿蜻蜓FM的首页轮播
+
+    compile 'me.spark:submitbutton:1.0.0' //提交按钮特效
+}

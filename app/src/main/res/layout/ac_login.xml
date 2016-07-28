@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+
+    <shem.com.materiallogin.MaterialLoginView
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:loginActionText="LOGIN"
+        app:loginHint="Username"
+        app:loginPasswordHint="Password"
+        app:loginTextColor="@color/material_login_register_color"
+        app:loginTitle="Login"
+        app:registerActionText="SIGN UP"
+        app:registerHint="Username"
+        app:registerIcon="@drawable/ic_person_add_white_24dp"
+        app:registerPasswordHint="Password"
+        app:registerRepeatPasswordHint="RePassweord"
+        app:registerTextColor="@color/colorAccent"
+        app:registerTitle="Join us"
+        app:registerEnabled="true">
+
+    </shem.com.materiallogin.MaterialLoginView>
+
+</FrameLayout>

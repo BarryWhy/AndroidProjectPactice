@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.toolbar.TransparentToolBarActivity">
+
+    <!--下拉刷新-动画-->
+   <!-- <com.race604.flyrefresh.FlyRefreshLayout
+        android:id="@+id/flyRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="24dip"
+            android:background="#FFFFFF">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </com.race604.flyrefresh.FlyRefreshLayout>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@android:color/transparent"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>-->
+
+<com.dell.mymainsliderimage.util.toolbar.transparenttoolbar.ToolBarSroll
+    android:id="@+id/bar_scrool"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="match_parent"
+            android:layout_height="600dip"
+            android:background="@android:color/holo_purple"
+            android:text="This is body1"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="30sp"/>
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="match_parent"
+            android:layout_height="700dip"
+            android:background="@android:color/holo_orange_light"
+            android:text="This is body2"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="30sp"/>
+
+    </LinearLayout>
+    
+</com.dell.mymainsliderimage.util.toolbar.transparenttoolbar.ToolBarSroll>
+
+    <com.dell.mymainsliderimage.util.toolbar.transparenttoolbar.TransparentToolBar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="55dip">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="Transparent toolbar"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@android:color/black" />
+
+    </com.dell.mymainsliderimage.util.toolbar.transparenttoolbar.TransparentToolBar>
+
+</RelativeLayout>
