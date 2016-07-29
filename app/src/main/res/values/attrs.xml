@@ -33,11 +33,13 @@
     <attr name="titleText" format="string"/>
     <attr name="titleSize" format="dimension"/>
     <attr name="titleColor" format="color"/>
+    <attr name="titleBackground" format="color"/>
 
     <declare-styleable name="CustomTitleView">
         <attr name="titleText"/>
         <attr name="titleSize"/>
         <attr name="titleColor"/>
+        <attr name="titleBackground"/>
     </declare-styleable>
     
 </resources>

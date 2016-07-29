@@ -1,8 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <com.dell.androidprojectpactice.ui.diyview.CustomTitleView
+        android:id="@+id/customTitleView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        custom:titleText="3712"
+        android:padding="10dp"
+        custom:titleColor="#ff0000"
+        custom:titleBackground="@color/sv_blue"
+        android:layout_centerInParent="true"
+        custom:titleSize="30sp" />
 
-
-</LinearLayout>
+</RelativeLayout>
