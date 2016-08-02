@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:custom="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/params"
+        android:textSize="20sp"
+        android:layout_above="@+id/customTitleView"
+        android:layout_centerInParent="true"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        />
 
     <com.dell.androidprojectpactice.ui.diyview.CustomTitleView
         android:id="@+id/customTitleView"
@@ -12,8 +20,19 @@
         custom:titleText="3712"
         android:padding="10dp"
         custom:titleColor="#ff0000"
-        custom:titleBackground="@color/sv_blue"
         android:layout_centerInParent="true"
         custom:titleSize="30sp" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_marginTop="20dp"
+        android:padding="5dp"
+        android:textSize="20sp"
+        android:text="Submit"
+        android:background="@android:color/holo_purple"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/customTitleView"/>
 
 </RelativeLayout>

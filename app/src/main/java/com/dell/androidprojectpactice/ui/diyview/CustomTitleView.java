@@ -91,6 +91,11 @@ public class CustomTitleView extends TextView {
     }
 
     @Override
+    public CharSequence getText() {
+        return mTitleText;
+    }
+
+    @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
         /*
         * 设置宽度
