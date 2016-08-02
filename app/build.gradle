@@ -82,4 +82,6 @@ dependencies {
     compile 'me.wangyuwei:banner:1.0.6' //仿蜻蜓FM的首页轮播
 
     compile 'me.spark:submitbutton:1.0.0' //提交按钮特效
+
+    compile 'com.github.piotrek1543:CustomSpinner:0.1' //下拉框
 }
